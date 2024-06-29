@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        Job
+        Create Job
     </x-slot:heading>
 
 
