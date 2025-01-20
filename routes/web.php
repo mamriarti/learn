@@ -7,8 +7,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('test',function ()
 {
-    return new \App\Mail\JobPosted();
+    \Illuminate\Support\Facades\Mail::to('divinaCratia@gmail.com')->send( new \App\Mail\JobPosted());
+    return 'Done';
 });
+
 
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
